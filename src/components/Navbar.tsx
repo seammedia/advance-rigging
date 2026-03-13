@@ -19,7 +19,7 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
-          <img src="/img/logo.png" alt="Advanced Rigging" className="h-14 md:h-16 w-auto" />
+          <img src="/img/logo.png" alt="Advanced Rigging" className="h-20 md:h-24 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
