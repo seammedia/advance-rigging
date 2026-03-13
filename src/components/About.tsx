@@ -1,11 +1,7 @@
-import { Shield, Award, Users } from 'lucide-react'
-import { STATS } from '@/constants'
+import { Shield, Leaf, Award, Users } from 'lucide-react'
+import { PILLARS } from '@/constants'
 
-const ICON_MAP: Record<string, typeof Shield> = {
-  'Years Experience': Award,
-  'Projects Completed': Users,
-  'Safety Record': Shield,
-}
+const PILLAR_ICONS = [Shield, Leaf, Award, Users]
 
 export default function About() {
   return (
@@ -18,13 +14,13 @@ export default function About() {
               About Us
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-ar-black mb-6 leading-tight">
-              We rise by lifting our industry
+              Four pillars that drive everything we do
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Advance Rigging delivers professional lifting and rigging solutions with an unwavering commitment to safety and quality. With decades of combined experience, our team handles complex operations with precision and care.
+              Advanced Rigging specialises in structural steel and precast concrete erection, but we also have the experienced staff and full range of equipment to complete all the rigging components of your project.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              From mechanical rigging and heavy lifts to installation and fabrication, we provide end-to-end solutions tailored to your project requirements.
+              Our commitment to safety, environment, quality, and service ensures the best outcomes for our clients and project stakeholders.
             </p>
           </div>
 
@@ -34,15 +30,15 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-200">
-          {STATS.map((stat) => {
-            const Icon = ICON_MAP[stat.label] || Shield
+        {/* Four Pillars */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-200">
+          {PILLARS.map((pillar, i) => {
+            const Icon = PILLAR_ICONS[i]
             return (
-              <div key={stat.label} className="text-center">
+              <div key={pillar.title} className="text-center">
                 <Icon size={32} className="text-ar-red mx-auto mb-4" />
-                <p className="text-3xl md:text-4xl font-bold text-ar-black mb-2">{stat.value}</p>
-                <p className="text-gray-500 text-sm uppercase tracking-wide">{stat.label}</p>
+                <h3 className="text-xl font-bold text-ar-black mb-3">{pillar.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{pillar.description}</p>
               </div>
             )
           })}

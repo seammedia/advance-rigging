@@ -8,8 +8,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img src="/img/logo.png" alt="Advanced Rigging" className="h-16 w-auto mb-4" />
-            <p className="text-sm leading-relaxed">
-              Professional lifting and rigging solutions delivered with precision, safety, and reliability.
+            <p className="text-sm leading-relaxed mb-4">
+              Trusted provider of high quality structural steel and precast concrete erection services.
+            </p>
+            <p className="text-xs text-gray-600">
+              Advanced Rigging Pty Ltd<br />
+              ACN 682 156 663
             </p>
           </div>
 
@@ -17,12 +21,12 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Services</h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="/services/structural-steel" className="hover:text-white transition-colors">Structural Steel</a></li>
+              <li><a href="/services/precast-panels" className="hover:text-white transition-colors">Pre-cast Panels</a></li>
+              <li><a href="/services/tilt-up-panels" className="hover:text-white transition-colors">Tilt-up Panels</a></li>
               <li><a href="/services/mechanical-rigging" className="hover:text-white transition-colors">Mechanical Rigging</a></li>
-              <li><a href="/services/lifting-skating" className="hover:text-white transition-colors">Lifting & Skating</a></li>
-              <li><a href="/services/installation" className="hover:text-white transition-colors">Installation</a></li>
-              <li><a href="/services/maintenance" className="hover:text-white transition-colors">Maintenance & Shutdowns</a></li>
-              <li><a href="/services/labour-equipment-hire" className="hover:text-white transition-colors">Labour & Equipment Hire</a></li>
-              <li><a href="/services/fabrication" className="hover:text-white transition-colors">Fabrication</a></li>
+              <li><a href="/services/heavy-lift-rigging" className="hover:text-white transition-colors">Heavy Lift Rigging</a></li>
+              <li><a href="/services/crane-hire" className="hover:text-white transition-colors">Crane Hire</a></li>
             </ul>
           </div>
 
@@ -34,20 +38,20 @@ export default function Footer() {
                 <Phone size={18} className="text-ar-red flex-shrink-0" />
                 0403 289 016
               </a>
-              <a href="mailto:jon@advancedrigging.au" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:admin@advancedrigging.au" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Mail size={18} className="text-ar-red flex-shrink-0" />
-                jon@advancedrigging.au
+                admin@advancedrigging.au
               </a>
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-ar-red flex-shrink-0 mt-0.5" />
-                <span>Australia</span>
+                <span>347 Mandogalup Rd<br />Hope Valley WA 6165</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
-          &copy; {new Date().getFullYear()} Advance Rigging. All rights reserved.
+          &copy; {new Date().getFullYear()} Advanced Rigging Pty Ltd. All rights reserved.
         </div>
       </div>
     </footer>

@@ -80,7 +80,7 @@ export default function ServicePage({ title, subtitle, description, steps, benef
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-ar-black mb-8">
-                Why Advance Rigging
+                Why Advanced Rigging
               </h2>
               <ul className="space-y-4">
                 {benefits.map((benefit, i) => (
@@ -147,7 +147,7 @@ export default function ServicePage({ title, subtitle, description, steps, benef
       <footer className="bg-ar-black border-t border-gray-800 py-8">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <img src="/img/logo.png" alt="Advanced Rigging" className="h-12 w-auto mx-auto mb-2" />
-          <p className="text-gray-500 text-xs">&copy; {new Date().getFullYear()} Advance Rigging. All rights reserved.</p>
+          <p className="text-gray-500 text-xs">&copy; {new Date().getFullYear()} Advanced Rigging Pty Ltd. All rights reserved.</p>
         </div>
       </footer>
     </div>

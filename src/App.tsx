@@ -6,12 +6,16 @@ import About from '@/components/About'
 import Services from '@/components/Services'
 import Projects from '@/components/Projects'
 import Footer from '@/components/Footer'
+import StructuralSteel from '@/pages/StructuralSteel'
+import PrecastPanels from '@/pages/PrecastPanels'
+import TiltUpPanels from '@/pages/TiltUpPanels'
+import DeltaCore from '@/pages/DeltaCore'
 import MechanicalRigging from '@/pages/MechanicalRigging'
-import LiftingSkating from '@/pages/LiftingSkating'
-import Installation from '@/pages/Installation'
-import Maintenance from '@/pages/Maintenance'
-import LabourEquipmentHire from '@/pages/LabourEquipmentHire'
-import Fabrication from '@/pages/Fabrication'
+import HeavyLiftRigging from '@/pages/HeavyLiftRigging'
+import SiteWelding from '@/pages/SiteWelding'
+import CraneHire from '@/pages/CraneHire'
+import LabourHire from '@/pages/LabourHire'
+import ShutdownWorks from '@/pages/ShutdownWorks'
 
 function HomePage() {
   return (
@@ -32,12 +36,16 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/services/structural-steel" element={<StructuralSteel />} />
+        <Route path="/services/precast-panels" element={<PrecastPanels />} />
+        <Route path="/services/tilt-up-panels" element={<TiltUpPanels />} />
+        <Route path="/services/delta-core" element={<DeltaCore />} />
         <Route path="/services/mechanical-rigging" element={<MechanicalRigging />} />
-        <Route path="/services/lifting-skating" element={<LiftingSkating />} />
-        <Route path="/services/installation" element={<Installation />} />
-        <Route path="/services/maintenance" element={<Maintenance />} />
-        <Route path="/services/labour-equipment-hire" element={<LabourEquipmentHire />} />
-        <Route path="/services/fabrication" element={<Fabrication />} />
+        <Route path="/services/heavy-lift-rigging" element={<HeavyLiftRigging />} />
+        <Route path="/services/site-welding" element={<SiteWelding />} />
+        <Route path="/services/crane-hire" element={<CraneHire />} />
+        <Route path="/services/labour-hire" element={<LabourHire />} />
+        <Route path="/services/shutdown-works" element={<ShutdownWorks />} />
       </Routes>
     </Router>
   )

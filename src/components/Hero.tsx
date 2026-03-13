@@ -9,15 +9,15 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="max-w-3xl">
           <p className="text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
-            Lifting & Rigging Solutions
+            Structural Steel & Precast Concrete Erection
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-            Securing Trust.
+            Trusted Quality.
             <br />
-            <span className="text-ar-red">Ensuring Safety.</span>
+            <span className="text-ar-red">Built to Last.</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-            Professional rigging and lifting solutions delivered with precision, safety, and reliability. Your trusted partner for complex heavy lifting operations.
+            Advanced Rigging is a trusted provider of high quality structural steel and precast concrete erection services. Experienced staff, full range of equipment, and a commitment to safety on every project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
