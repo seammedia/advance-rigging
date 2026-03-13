@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from '@/components/ScrollToTop'
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Projects from '@/components/Projects'
+import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 import StructuralSteel from '@/pages/StructuralSteel'
 import PrecastPanels from '@/pages/PrecastPanels'
@@ -18,6 +20,7 @@ import LabourHire from '@/pages/LabourHire'
 import ShutdownWorks from '@/pages/ShutdownWorks'
 
 function HomePage() {
+  useScrollAnimation()
   return (
     <>
       <Navbar />
@@ -25,6 +28,7 @@ function HomePage() {
       <Services />
       <About />
       <Projects />
+      <CTA />
       <Footer />
     </>
   )

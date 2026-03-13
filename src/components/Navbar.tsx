@@ -15,11 +15,11 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-ar-black/95 backdrop-blur shadow-lg' : 'bg-ar-black'
+      scrolled ? 'bg-white/95 backdrop-blur shadow-md' : 'bg-white'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
-          <img src="/img/logo.png" alt="Advanced Rigging" className="h-12 md:h-14 w-auto" />
+          <img src="/img/logo.png" alt="Advanced Rigging" className="h-14 md:h-16 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -28,7 +28,7 @@ export default function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              className="text-gray-300 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors"
+              className="text-gray-700 hover:text-ar-red text-sm font-medium tracking-wide uppercase transition-colors"
             >
               {item.label}
             </a>
@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
+          className="md:hidden text-gray-800"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -53,13 +53,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-ar-black border-t border-gray-800 px-6 py-6">
+        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-6 shadow-lg">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="block py-3 text-gray-300 hover:text-white text-sm font-medium tracking-wide uppercase"
+              className="block py-3 text-gray-700 hover:text-ar-red text-sm font-medium tracking-wide uppercase"
             >
               {item.label}
             </a>
