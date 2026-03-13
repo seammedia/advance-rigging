@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">ADVANCE RIGGING</h3>
+            <img src="/img/logo.png" alt="Advanced Rigging" className="h-16 w-auto mb-4" />
             <p className="text-sm leading-relaxed">
               Professional lifting and rigging solutions delivered with precision, safety, and reliability.
             </p>

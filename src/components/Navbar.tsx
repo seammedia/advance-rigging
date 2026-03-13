@@ -18,8 +18,8 @@ export default function Navbar() {
       scrolled ? 'bg-ar-black/95 backdrop-blur shadow-lg' : 'bg-ar-black'
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="text-white text-xl font-bold tracking-tight">
-          ADVANCE RIGGING
+        <Link to="/" className="flex-shrink-0">
+          <img src="/img/logo.png" alt="Advanced Rigging" className="h-12 md:h-14 w-auto" />
         </Link>
 
         {/* Desktop Nav */}

@@ -146,7 +146,7 @@ export default function ServicePage({ title, subtitle, description, steps, benef
       {/* Simple Footer */}
       <footer className="bg-ar-black border-t border-gray-800 py-8">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-white font-bold text-lg mb-2">ADVANCE RIGGING</p>
+          <img src="/img/logo.png" alt="Advanced Rigging" className="h-12 w-auto mx-auto mb-2" />
           <p className="text-gray-500 text-xs">&copy; {new Date().getFullYear()} Advance Rigging. All rights reserved.</p>
         </div>
       </footer>
