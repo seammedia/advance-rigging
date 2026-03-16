@@ -14,11 +14,14 @@ export default function Hero() {
             <p className="fade-up text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
               Structural Steel & Precast Concrete Erection
             </p>
-            <h1 className="fade-up text-4xl md:text-5xl lg:text-6xl font-bold text-ar-black leading-tight mb-6" style={{ transitionDelay: '100ms' }}>
+            <h1 className="fade-up text-4xl md:text-5xl lg:text-6xl font-bold text-ar-black leading-tight mb-2" style={{ transitionDelay: '100ms' }}>
               Trusted Quality.
               <br />
               <span className="text-ar-red">Built to Last.</span>
             </h1>
+            <p className="fade-up text-lg md:text-xl text-gray-400 font-medium italic mb-6" style={{ transitionDelay: '150ms' }}>
+              Lifting Standards.
+            </p>
             <p className="fade-up text-gray-500 text-lg max-w-xl mb-10 leading-relaxed" style={{ transitionDelay: '200ms' }}>
               Advanced Rigging is a trusted provider of high quality structural steel and precast concrete erection services. Experienced staff, full range of equipment, and a commitment to safety on every project.
             </p>
@@ -41,8 +44,12 @@ export default function Hero() {
 
           {/* Hero image */}
           <div className="fade-up" style={{ transitionDelay: '400ms' }}>
-            <div className="rounded-2xl bg-gray-100 aspect-[4/3] flex items-center justify-center border border-gray-200 overflow-hidden shadow-lg">
-              <p className="text-gray-400 text-sm">Hero image - add to /public/img/hero.jpg</p>
+            <div className="rounded-2xl aspect-[4/3] overflow-hidden shadow-lg">
+              <img
+                src="/img/hero.jpg"
+                alt="Advanced Rigging Terex crane on site"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
