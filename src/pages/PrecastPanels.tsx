@@ -44,6 +44,7 @@ export default function PrecastPanels() {
           answer: 'We install panels to the specified tolerances so that joints are consistent and ready for sealing by the waterproofing trade. We can advise on joint details during planning to ensure a smooth process.',
         },
       ]}
+      image="/img/service-precast.jpg"
     />
   )
 }

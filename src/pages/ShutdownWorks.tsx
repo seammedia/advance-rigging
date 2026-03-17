@@ -45,6 +45,7 @@ export default function ShutdownWorks() {
           answer: 'Yes. We maintain availability for urgent callouts and can mobilise experienced riggers and crane support at short notice. Contact us directly to discuss your immediate requirements and we will do our best to assist.',
         },
       ]}
+      image="/img/service-crane.jpg"
     />
   )
 }

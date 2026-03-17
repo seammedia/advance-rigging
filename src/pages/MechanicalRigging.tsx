@@ -45,6 +45,7 @@ export default function MechanicalRigging() {
           answer: 'All riggers hold current high-risk work licences issued under Australian regulations. Our team is trained in confined space, working at heights, and other relevant competencies as required by the scope of work.',
         },
       ]}
+      image="/img/service-rigging.jpg"
     />
   )
 }

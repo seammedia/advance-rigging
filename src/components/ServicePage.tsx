@@ -20,9 +20,10 @@ interface ServicePageProps {
   steps: Step[]
   benefits: string[]
   faqs: FAQ[]
+  image?: string
 }
 
-export default function ServicePage({ title, subtitle, description, steps, benefits, faqs }: ServicePageProps) {
+export default function ServicePage({ title, subtitle, description, steps, benefits, faqs, image }: ServicePageProps) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -91,8 +92,12 @@ export default function ServicePage({ title, subtitle, description, steps, benef
                 ))}
               </ul>
             </div>
-            <div className="rounded-lg bg-gray-100 aspect-[4/3] flex items-center justify-center border border-gray-200">
-              <p className="text-gray-400 text-sm">Service image placeholder</p>
+            <div className="rounded-lg aspect-[4/3] overflow-hidden shadow-md">
+              <img
+                src={image || '/img/service-crane.jpg'}
+                alt={title}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

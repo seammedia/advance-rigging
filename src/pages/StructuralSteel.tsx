@@ -45,6 +45,7 @@ export default function StructuralSteel() {
           answer: 'Our crews hold current high-risk work licences for rigging and crane operations, along with relevant trade qualifications. We comply with Australian Standards and maintain all required safety documentation.',
         },
       ]}
+      image="/img/service-steel.jpg"
     />
   )
 }

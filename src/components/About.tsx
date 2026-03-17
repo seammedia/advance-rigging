@@ -24,10 +24,14 @@ export default function About() {
             </p>
           </div>
 
-          {/* Image placeholder */}
+          {/* Image */}
           <div className="slide-right">
-            <div className="rounded-2xl bg-gray-100 aspect-[4/3] flex items-center justify-center border border-gray-200 overflow-hidden shadow-md">
-              <p className="text-gray-400 text-sm">About image - add to /public/img/about.jpg</p>
+            <div className="rounded-2xl aspect-[4/3] overflow-hidden shadow-md">
+              <img
+                src="/img/about.jpg"
+                alt="Advanced Rigging crane lifting steel beams on site"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

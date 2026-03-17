@@ -1,3 +1,21 @@
+const PROJECTS = [
+  {
+    title: 'Precast Concrete Structure',
+    description: 'Multi-storey precast concrete building with structural steel framing and roof structure.',
+    image: '/img/project-1.jpg',
+  },
+  {
+    title: 'Industrial Warehouse',
+    description: 'Large-scale structural steel warehouse erection with crane installation and overhead gantry.',
+    image: '/img/project-2.jpg',
+  },
+  {
+    title: 'Commercial Steel Frame',
+    description: 'Structural steel frame erection for a commercial warehouse and distribution facility.',
+    image: '/img/project-3.jpg',
+  },
+]
+
 export default function Projects() {
   return (
     <section id="projects" className="py-20 md:py-28 bg-gray-50">
@@ -15,14 +33,18 @@ export default function Projects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="group rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-              <div className="aspect-[4/3] bg-gray-100 flex items-center justify-center overflow-hidden">
-                <p className="text-gray-400 text-sm">Project image {i}</p>
+          {PROJECTS.map((project) => (
+            <div key={project.title} className="group rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-ar-black mb-2 group-hover:text-ar-red transition-colors">Project {i}</h3>
-                <p className="text-gray-500 text-sm">Project description - to be added</p>
+                <h3 className="text-lg font-bold text-ar-black mb-2 group-hover:text-ar-red transition-colors">{project.title}</h3>
+                <p className="text-gray-500 text-sm">{project.description}</p>
               </div>
             </div>
           ))}

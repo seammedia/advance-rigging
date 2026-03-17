@@ -44,6 +44,7 @@ export default function DeltaCore() {
           answer: 'Delta Core is commonly used in commercial offices, multi-storey residential, retail centres, and industrial buildings. We can review your project requirements and advise whether Delta Core is a suitable option during the planning stage.',
         },
       ]}
+      image="/img/service-precast.jpg"
     />
   )
 }

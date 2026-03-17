@@ -45,6 +45,7 @@ export default function HeavyLiftRigging() {
           answer: 'Yes. We have experience planning and executing tandem lifts, multi-crane operations, and lifts involving complex load geometry. These operations require additional engineering and coordination, which we manage as part of our planning process.',
         },
       ]}
+      image="/img/service-crane.jpg"
     />
   )
 }

@@ -44,6 +44,7 @@ export default function LabourHire() {
           answer: 'Yes. Our personnel arrive with standard PPE including hard hat, safety boots, high-visibility clothing, gloves, and safety glasses. Any site-specific PPE requirements beyond the standard set should be advised at the time of booking.',
         },
       ]}
+      image="/img/service-rigging.jpg"
     />
   )
 }

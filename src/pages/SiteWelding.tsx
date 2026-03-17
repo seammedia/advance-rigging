@@ -44,6 +44,7 @@ export default function SiteWelding() {
           answer: 'We weld structural steel, mild steel, and general carbon steels on site. For specialist materials such as stainless steel or aluminium, we can discuss your requirements and confirm our capability for the specific application.',
         },
       ]}
+      image="/img/service-steel.jpg"
     />
   )
 }

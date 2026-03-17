@@ -44,6 +44,7 @@ export default function TiltUpPanels() {
           answer: 'The slab must be complete with bracing inserts cast in. Panels should be cast, cured, and have lifting anchors installed. Crane access paths need to be clear and capable of supporting crane loads.',
         },
       ]}
+      image="/img/service-precast.jpg"
     />
   )
 }

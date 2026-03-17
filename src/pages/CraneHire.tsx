@@ -45,6 +45,7 @@ export default function CraneHire() {
           answer: 'Our crane hire includes the crane, operator, and standard rigging gear. Mobilisation and demobilisation are quoted based on site location. Additional items such as dogmen, lift plans, or specialised rigging are quoted separately as required.',
         },
       ]}
+      image="/img/service-crane.jpg"
     />
   )
 }
