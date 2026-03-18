@@ -12,7 +12,7 @@ export default function Hero() {
           {/* Text */}
           <div>
             <p className="fade-up text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
-              Structural Steel & Precast Concrete Erection
+              Industrial Structural Steel Erection
             </p>
             <h1 className="fade-up text-4xl md:text-5xl lg:text-6xl font-bold text-ar-black leading-tight mb-2" style={{ transitionDelay: '100ms' }}>
               Trusted Quality.
@@ -23,7 +23,7 @@ export default function Hero() {
               Lifting Standards.
             </p>
             <p className="fade-up text-gray-500 text-lg max-w-xl mb-10 leading-relaxed" style={{ transitionDelay: '200ms' }}>
-              Advanced Rigging is a trusted provider of high quality structural steel and precast concrete erection services. Experienced staff, full range of equipment, and a commitment to safety on every project.
+              Advanced Rigging is a specialist structural steel erection contractor for the industrial sector. Experienced crews, purpose-built equipment, and an unwavering commitment to safety on every project.
             </p>
             <div className="fade-up flex flex-col sm:flex-row gap-4" style={{ transitionDelay: '300ms' }}>
               <a
@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="rounded-2xl aspect-[4/3] overflow-hidden shadow-lg">
               <img
                 src="/img/hero.jpg"
-                alt="Advanced Rigging Terex crane on site"
+                alt="Advanced Rigging Terex crane on industrial site"
                 className="w-full h-full object-cover"
               />
             </div>

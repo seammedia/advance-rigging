@@ -14,7 +14,7 @@ export default function CTA() {
           Ready to discuss your project?
         </h2>
         <p className="fade-up text-white/80 text-lg max-w-xl mx-auto mb-10" style={{ transitionDelay: '100ms' }}>
-          Get in touch with our team to discuss your structural steel, precast, or rigging requirements.
+          Get in touch with our team to discuss your structural steel erection requirements.
         </p>
         <div className="fade-up flex flex-col sm:flex-row gap-4 justify-center" style={{ transitionDelay: '200ms' }}>
           <a

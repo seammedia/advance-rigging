@@ -17,7 +17,7 @@ export default function About() {
               Four pillars that drive everything we do
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-6">
-              Advanced Rigging specialises in structural steel and precast concrete erection, but we also have the experienced staff and full range of equipment to complete all the rigging components of your project.
+              Advanced Rigging specialises in structural steel erection for the industrial sector. We have the experienced staff and purpose-built equipment to deliver safe, high-quality steel installations on projects of any scale.
             </p>
             <p className="text-gray-500 text-lg leading-relaxed">
               Our commitment to safety, environment, quality, and service ensures the best outcomes for our clients and project stakeholders.

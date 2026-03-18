@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <img src="/img/logo.png" alt="Advanced Rigging" className="h-16 w-auto mb-4" />
             <p className="text-sm leading-relaxed mb-4">
-              Trusted provider of high quality structural steel and precast concrete erection services.
+              Specialist structural steel erection contractor for the industrial sector across Western Australia.
             </p>
             <p className="text-xs text-gray-600">
               Advanced Rigging Pty Ltd<br />
@@ -19,14 +19,12 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Services</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/services/structural-steel" className="hover:text-white transition-colors">Structural Steel</a></li>
-              <li><a href="/services/precast-panels" className="hover:text-white transition-colors">Pre-cast Panels</a></li>
-              <li><a href="/services/tilt-up-panels" className="hover:text-white transition-colors">Tilt-up Panels</a></li>
-              <li><a href="/services/mechanical-rigging" className="hover:text-white transition-colors">Mechanical Rigging</a></li>
-              <li><a href="/services/heavy-lift-rigging" className="hover:text-white transition-colors">Heavy Lift Rigging</a></li>
-              <li><a href="/services/crane-hire" className="hover:text-white transition-colors">Crane Hire</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Our Services</a></li>
+              <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -38,9 +36,9 @@ export default function Footer() {
                 <Phone size={18} className="text-ar-red flex-shrink-0" />
                 0403 289 016
               </a>
-              <a href="mailto:admin@advancedrigging.au" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:jon@advancedrigging.au" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Mail size={18} className="text-ar-red flex-shrink-0" />
-                admin@advancedrigging.au
+                jon@advancedrigging.au
               </a>
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-ar-red flex-shrink-0 mt-0.5" />

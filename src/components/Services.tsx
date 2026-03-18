@@ -1,47 +1,59 @@
-import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
-import { SERVICES } from '@/constants'
+import { ArrowRight, CheckCircle } from 'lucide-react'
+
+const CAPABILITIES = [
+  'Portal frames and clear-span structures',
+  'Mezzanine floors and platforms',
+  'Roof purlins, girts, and bridging',
+  'Columns, beams, and bracing systems',
+  'Crane rails and runway beams',
+  'Connection bolting and site welding',
+]
 
 export default function Services() {
   return (
     <section id="services" className="py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16 fade-up">
-          <p className="text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
-            What We Do
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-ar-black mb-4">
-            Our Services
-          </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Comprehensive structural steel, precast concrete, and rigging solutions for projects of any scale
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Text */}
+          <div className="fade-up">
+            <p className="text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
+              What We Do
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-ar-black mb-6 leading-tight">
+              Structural Steel Erection Specialists
+            </h2>
+            <p className="text-gray-500 text-lg leading-relaxed mb-8">
+              We do one thing and we do it well. Advanced Rigging is a specialist structural steel erection contractor serving the industrial sector across Western Australia. From warehouses and factories to processing plants and distribution centres, our experienced crews deliver safe, precise steel installations on schedule.
+            </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
-          {SERVICES.map((service) => (
-            <Link
-              key={service.id}
-              to={`/services/${service.slug}`}
-              className="group bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-gray-100"
+            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              {CAPABILITIES.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <CheckCircle size={20} className="text-ar-red flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-600 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-ar-red hover:bg-ar-red-dark text-white px-8 py-4 rounded font-semibold text-sm uppercase tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-red-200"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-10 h-10 rounded-lg bg-red-50 text-ar-red font-bold text-sm flex items-center justify-center">
-                  {service.id}
-                </span>
-                <div className="h-px flex-1 bg-gray-100 group-hover:bg-red-100 transition-colors" />
-              </div>
-              <h3 className="text-xl font-bold text-ar-black mb-3 group-hover:text-ar-red transition-colors duration-300">
-                {service.title}
-              </h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                {service.description}
-              </p>
-              <span className="inline-flex items-center gap-2 text-ar-red text-sm font-semibold group-hover:gap-3 transition-all duration-300">
-                Learn More <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </span>
-            </Link>
-          ))}
+              Discuss Your Project
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
+          {/* Image */}
+          <div className="fade-up" style={{ transitionDelay: '200ms' }}>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="/img/service-steel.jpg"
+                alt="Structural steel frame erection on an industrial site"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
