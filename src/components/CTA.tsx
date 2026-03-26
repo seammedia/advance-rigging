@@ -1,6 +1,14 @@
 import { Phone, ArrowRight } from 'lucide-react'
 
-export default function CTA() {
+interface CTAProps {
+  heading?: string
+  subtext?: string
+}
+
+export default function CTA({
+  heading = 'Ready to discuss your next project?',
+  subtext = 'Industrial structural steel erection across Western Australia.',
+}: CTAProps) {
   return (
     <section className="py-20 md:py-28 bg-ar-red relative overflow-hidden">
       {/* Background pattern */}
@@ -11,10 +19,10 @@ export default function CTA() {
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
         <h2 className="fade-up text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-          Ready to discuss your project?
+          {heading}
         </h2>
         <p className="fade-up text-white/80 text-lg max-w-xl mx-auto mb-10" style={{ transitionDelay: '100ms' }}>
-          Get in touch with our team to discuss your structural steel erection requirements.
+          {subtext}
         </p>
         <div className="fade-up flex flex-col sm:flex-row gap-4 justify-center" style={{ transitionDelay: '200ms' }}>
           <a
@@ -25,7 +33,7 @@ export default function CTA() {
             Call Now
           </a>
           <a
-            href="mailto:admin@advancedrigging.au"
+            href="mailto:jon@advancedrigging.au"
             className="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white text-white px-8 py-4 rounded font-semibold text-sm uppercase tracking-wide transition-all duration-300"
           >
             Email Us
