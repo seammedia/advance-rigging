@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <img src="/img/logo.png" alt="Advanced Rigging" className="h-16 w-auto mb-4" />
+            <img src="/img/logo-white.png" alt="Advanced Rigging" className="h-28 w-auto mb-6" />
             <p className="text-sm leading-relaxed mb-4">
               Specialist structural steel erection contractor for the industrial sector across Western Australia.
             </p>
@@ -33,13 +33,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Contact</h4>
             <div className="space-y-4 text-sm">
-              <a href="tel:0403289016" className="flex items-center gap-3 hover:text-white transition-colors">
-                <Phone size={18} className="text-ar-red flex-shrink-0" />
-                0403 289 016
-              </a>
-              <a href="mailto:jon@advancedrigging.au" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:admin@advancedrigging.au" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Mail size={18} className="text-ar-red flex-shrink-0" />
-                jon@advancedrigging.au
+                admin@advancedrigging.au
               </a>
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-ar-red flex-shrink-0 mt-0.5" />

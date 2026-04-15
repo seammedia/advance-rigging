@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import PageHero from '@/components/PageHero'
 import CTA from '@/components/CTA'
-import { SAFETY_COMMITMENTS, CONTRACTOR_PLATFORMS } from '@/constants'
+import { SAFETY_COMMITMENTS, CONTRACTOR_PLATFORMS, TESTIMONIALS } from '@/constants'
 
 export default function Safety() {
   return (
@@ -61,10 +61,10 @@ export default function Safety() {
       <section className="py-20 md:py-28 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 text-center fade-up">
           <blockquote className="text-xl md:text-2xl font-medium text-gray-700 italic leading-relaxed mb-6">
-            "Their pre-start documentation was the best I'd seen from a subcontractor on that site. Everything was in order before they started, and they ran a clean, safe job from day one to practical completion."
+            "{TESTIMONIALS.safety.quote}"
           </blockquote>
           <p className="text-sm text-gray-500">
-            <span className="font-semibold text-gray-700">Site Manager</span> - Tier 2 industrial builder, Perth WA
+            <span className="font-semibold text-gray-700">{TESTIMONIALS.safety.author}</span> - {TESTIMONIALS.safety.role}, {TESTIMONIALS.safety.company}
           </p>
         </div>
       </section>

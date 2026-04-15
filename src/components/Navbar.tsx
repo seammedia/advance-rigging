@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Mail } from 'lucide-react'
 import { NAV_ITEMS } from '@/constants'
 
 export default function Navbar() {
@@ -24,7 +24,7 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
-          <img src="/img/logo.png" alt="Advanced Rigging" className="h-20 md:h-24 w-auto" />
+          <img src="/img/logo.png" alt="Advanced Rigging" className="h-24 md:h-28 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -43,11 +43,11 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="tel:0403289016"
+            href="mailto:admin@advancedrigging.au"
             className="flex items-center gap-2 bg-ar-red hover:bg-ar-red-dark text-white px-5 py-2.5 rounded text-sm font-semibold transition-colors"
           >
-            <Phone size={16} />
-            Call Now
+            <Mail size={16} />
+            Get a Quote
           </a>
         </div>
 
@@ -77,11 +77,11 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="tel:0403289016"
+            href="mailto:admin@advancedrigging.au"
             className="flex items-center justify-center gap-2 mt-4 bg-ar-red hover:bg-ar-red-dark text-white px-5 py-3 rounded text-sm font-semibold transition-colors"
           >
-            <Phone size={16} />
-            Call Now
+            <Mail size={16} />
+            Get a Quote
           </a>
         </div>
       )}

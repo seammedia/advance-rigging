@@ -147,12 +147,14 @@ export const SAFETY_COMMITMENTS = [
 ]
 
 export const CONTRACTOR_PLATFORMS = [
-  'Cm3',
-  'Rapid Global',
+  'CM3',
   'Pegasus',
-  'CredentialStream',
-  'Avetta',
-  'BROWZ',
+  'Rapid Global',
+  'Procore',
+  'Hammertech',
+  'Safety Culture',
+  'Aconex',
+  '1Breadcrumb',
 ]
 
 export const PROJECTS_DATA = [
@@ -182,20 +184,29 @@ export const PROJECTS_DATA = [
   },
 ]
 
-export const TESTIMONIALS = [
-  {
+export const TESTIMONIALS = {
+  home: {
     quote: 'Advanced Rigging delivered our structural steel package on programme and without a single safety incident. Their crew knew exactly what they were doing from day one.',
-    author: 'Project Manager',
-    company: 'Industrial construction client, Perth WA',
+    author: 'Kristin Back',
+    role: 'General Manager',
+    company: 'Mapel Building',
   },
-  {
+  builder: {
     quote: 'We\'ve used Advanced Rigging on three consecutive projects now. They\'re reliable, safety-conscious, and their crew actually communicate on site.',
-    author: 'Construction Manager',
-    company: 'Industrial builder, Perth WA',
+    author: 'Kieran Glaser',
+    role: 'Managing Director',
+    company: 'Glask Construction',
   },
-  {
+  fabricator: {
     quote: 'As a fabricator, we need our erection contractor to understand our delivery schedules and sequence accordingly. Advanced Rigging get it.',
-    author: 'Director',
-    company: 'Structural steel fabricator, Perth WA',
+    author: 'Enzo De\'Vita',
+    role: 'General Manager',
+    company: 'West End Steelworks',
   },
-]
+  safety: {
+    quote: 'Their pre-start documentation was the best I\'d seen from a subcontractor on that site. Everything was in order before they started, and they ran a clean, safe job from day one to practical completion.',
+    author: 'Jimmy West',
+    role: 'Construction Manager',
+    company: 'Geared Construction',
+  },
+}

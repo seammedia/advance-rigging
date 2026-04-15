@@ -76,13 +76,13 @@ export default function WhoWeAre() {
             Client Testimonials
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 stagger-children">
-            {TESTIMONIALS.slice(1).map((t, i) => (
+            {[TESTIMONIALS.builder, TESTIMONIALS.fabricator].map((t, i) => (
               <div key={i} className="bg-white rounded-xl p-8 shadow-sm border-l-4 border-ar-red">
                 <p className="text-gray-700 italic leading-relaxed mb-4">
                   "{t.quote}"
                 </p>
                 <p className="text-sm text-gray-500">
-                  <span className="font-semibold text-gray-700">{t.author}</span> - {t.company}
+                  <span className="font-semibold text-gray-700">{t.author}</span> - {t.role}, {t.company}
                 </p>
               </div>
             ))}

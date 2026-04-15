@@ -1,7 +1,7 @@
 import { TESTIMONIALS } from '@/constants'
 
 export default function About() {
-  const testimonial = TESTIMONIALS[0]
+  const testimonial = TESTIMONIALS.home
 
   return (
     <section className="py-20 md:py-28 bg-white">
@@ -16,7 +16,7 @@ export default function About() {
           <div className="text-gray-500 text-sm">
             <span className="font-semibold text-gray-700">{testimonial.author}</span>
             <span className="mx-2">-</span>
-            <span>{testimonial.company}</span>
+            <span>{testimonial.role}, {testimonial.company}</span>
           </div>
         </div>
       </div>

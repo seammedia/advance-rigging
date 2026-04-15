@@ -1,7 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { STATS, SECTORS } from '@/constants'
-import { Shield } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -19,24 +18,18 @@ export default function Hero() {
             </p>
             <h1 className="fade-up text-5xl md:text-6xl lg:text-7xl font-bold text-ar-black leading-none mb-6" style={{ transitionDelay: '100ms' }}>
               LIFTING<br />
-              <span className="text-ar-red">STANDARDS.</span>
+              STANDARDS.
             </h1>
             <p className="fade-up text-gray-500 text-lg max-w-xl mb-4 leading-relaxed" style={{ transitionDelay: '200ms' }}>
               We do one thing and we do it well. Advanced Rigging is a specialist structural steel erection contractor serving the industrial sector across Western Australia.
             </p>
-            <p className="fade-up text-gray-400 text-base max-w-xl mb-6 leading-relaxed" style={{ transitionDelay: '250ms' }}>
+            <p className="fade-up text-gray-400 text-base max-w-xl mb-8 leading-relaxed" style={{ transitionDelay: '250ms' }}>
               From warehouses and workshops to processing plants and distribution centres, our experienced crews deliver safe, precise steel installations - on schedule, every time.
             </p>
 
-            {/* WHS badge */}
-            <div className="fade-up flex items-center gap-2 text-sm text-gray-500 mb-8" style={{ transitionDelay: '280ms' }}>
-              <Shield size={18} className="text-ar-red" />
-              <span>Class-leading WHS system - zero LTIs</span>
-            </div>
-
             <div className="fade-up flex flex-col sm:flex-row gap-4" style={{ transitionDelay: '300ms' }}>
               <a
-                href="tel:0403289016"
+                href="mailto:admin@advancedrigging.au"
                 className="inline-flex items-center justify-center gap-2 bg-ar-red hover:bg-ar-red-dark text-white px-8 py-4 rounded font-semibold text-sm uppercase tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-red-200"
               >
                 Get a Quote

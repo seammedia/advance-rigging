@@ -1,4 +1,4 @@
-import { Phone, ArrowRight } from 'lucide-react'
+import { Mail, ArrowRight } from 'lucide-react'
 
 interface CTAProps {
   heading?: string
@@ -24,19 +24,13 @@ export default function CTA({
         <p className="fade-up text-white/80 text-lg max-w-xl mx-auto mb-10" style={{ transitionDelay: '100ms' }}>
           {subtext}
         </p>
-        <div className="fade-up flex flex-col sm:flex-row gap-4 justify-center" style={{ transitionDelay: '200ms' }}>
+        <div className="fade-up flex justify-center" style={{ transitionDelay: '200ms' }}>
           <a
-            href="tel:0403289016"
+            href="mailto:admin@advancedrigging.au"
             className="inline-flex items-center justify-center gap-2 bg-white text-ar-red hover:bg-gray-50 px-8 py-4 rounded font-semibold text-sm uppercase tracking-wide transition-all duration-300 hover:shadow-lg"
           >
-            <Phone size={18} />
-            Call Now
-          </a>
-          <a
-            href="mailto:jon@advancedrigging.au"
-            className="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white text-white px-8 py-4 rounded font-semibold text-sm uppercase tracking-wide transition-all duration-300"
-          >
-            Email Us
+            <Mail size={18} />
+            Contact Us
             <ArrowRight size={16} />
           </a>
         </div>
