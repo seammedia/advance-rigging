@@ -5,10 +5,6 @@ import { STATS, SECTORS } from '@/constants'
 export default function Hero() {
   return (
     <section className="relative bg-white pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
-      {/* Subtle background accents */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-red-50 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-red-50 rounded-full -translate-x-1/2 translate-y-1/2 blur-3xl" />
-
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
@@ -16,9 +12,9 @@ export default function Hero() {
             <p className="fade-up text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
               Specialist Steel Erection Contractor
             </p>
-            <h1 className="fade-up text-5xl md:text-6xl lg:text-7xl font-bold text-ar-black leading-none mb-6" style={{ transitionDelay: '100ms' }}>
-              LIFTING<br />
-              STANDARDS.
+            <h1 className="fade-up text-5xl md:text-6xl lg:text-7xl font-bold text-ar-black leading-tight mb-6" style={{ transitionDelay: '100ms' }}>
+              Lifting<br />
+              Standards.
             </h1>
             <p className="fade-up text-gray-500 text-lg max-w-xl mb-4 leading-relaxed" style={{ transitionDelay: '200ms' }}>
               We do one thing and we do it well. Advanced Rigging is a specialist structural steel erection contractor serving the industrial sector across Western Australia.
