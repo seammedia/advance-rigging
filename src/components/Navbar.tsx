@@ -24,7 +24,7 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
-          <img src="/img/logo.png" alt="Advanced Rigging" className="h-24 md:h-28 w-auto" />
+          <img src="/img/logo.png" alt="Advanced Rigging" className="h-32 md:h-36 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
