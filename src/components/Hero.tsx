@@ -4,7 +4,7 @@ import { STATS, SECTORS } from '@/constants'
 
 export default function Hero() {
   return (
-    <section className="relative bg-white pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+    <section className="relative bg-white pt-40 pb-16 md:pt-48 md:pb-24 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}

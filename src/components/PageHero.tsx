@@ -6,7 +6,7 @@ interface PageHeroProps {
 
 export default function PageHero({ eyebrow, heading, description }: PageHeroProps) {
   return (
-    <section className="bg-white pt-32 pb-16 md:pt-40 md:pb-20">
+    <section className="bg-white pt-44 pb-16 md:pt-52 md:pb-20">
       <div className="max-w-7xl mx-auto px-6">
         <p className="fade-up text-ar-red font-semibold text-sm uppercase tracking-widest mb-4">
           {eyebrow}

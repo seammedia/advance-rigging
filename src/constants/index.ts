@@ -155,6 +155,7 @@ export const CONTRACTOR_PLATFORMS = [
   'Safety Culture',
   'Aconex',
   '1Breadcrumb',
+  'Sign on Site',
 ]
 
 export const PROJECTS_DATA = [
