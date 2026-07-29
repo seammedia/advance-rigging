@@ -173,7 +173,7 @@ export const PROJECTS_DATA = [
     title: 'Large Format Distribution Facility',
     description: 'Full structural steel erection package across multiple bays including portal frames, roof purlins, wall girts, and a multi-level external office. Delivered to programme on an active site with parallel civil and concrete works in progress.',
     tags: ['Portal frames', 'Multi-bay', 'Live site'],
-    image: '/img/project-distribution-facility.jpg',
+    image: '/img/project-distribution-facility-v2.jpg',
   },
   {
     category: 'Workshop',
