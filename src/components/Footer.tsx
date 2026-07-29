@@ -29,12 +29,12 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               aria-label="The Children's Christmas Party"
-              className="transition-opacity hover:opacity-80"
+              className="bg-white px-4 py-3 transition-colors hover:bg-gray-100"
             >
               <img
                 src="/img/childrens-christmas-party.png"
                 alt="The Children's Christmas Party"
-                className="h-20 sm:h-24 w-auto object-contain"
+                className="h-16 sm:h-20 w-auto object-contain"
               />
             </a>
           </div>
