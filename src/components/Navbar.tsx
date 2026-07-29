@@ -14,17 +14,22 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  useEffect(() => {
-    setIsOpen(false)
-  }, [location])
-
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled ? 'bg-white/95 backdrop-blur shadow-md' : 'bg-white'
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-        <Link to="/" className="flex-shrink-0">
-          <img src="/img/logo.png" alt="Advanced Rigging" className="h-32 md:h-36 w-auto" />
+        <Link to="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
+          <img
+            src="/img/logo-small.jpg"
+            alt="Advanced Rigging"
+            className="h-16 w-auto md:hidden"
+          />
+          <img
+            src="/img/logo.png"
+            alt="Advanced Rigging"
+            className="hidden h-36 w-auto md:block"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -54,7 +59,9 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-800"
+          className="-mr-2 p-2 text-gray-800 md:hidden"
+          aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isOpen}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -67,6 +74,7 @@ export default function Navbar() {
             <Link
               key={item.label}
               to={item.href}
+              onClick={() => setIsOpen(false)}
               className={`block py-3 text-sm font-medium tracking-wide uppercase ${
                 location.pathname === item.href
                   ? 'text-ar-red'
